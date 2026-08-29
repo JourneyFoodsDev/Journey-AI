@@ -1,22 +1,9 @@
-# JourneyAI
+# Journey Foods
 
-Catalog quality jobs used by Admin → Data and Admin → Customers.
+Journey Foods is an AI-powered ingredient intelligence and supply chain platform for food and beverage brands, CPG teams, and manufacturers.
 
-## Triggers
+Teams use Journey Foods to discover ingredients, optimize formulations, and balance nutrition, cost, and sustainability across products, packaging, and suppliers.
 
-| Script | What it measures |
-| --- | --- |
-| `scripts/ingredient_completion.py` | Nutrition, supplier, allergen, sustainability field fill rate |
-| `scripts/product_completion.py` | Formula, claims, brand, nutrition completeness |
-| `scripts/packaging_completion.py` | Material, weight, recyclability |
-| `scripts/supplier_completion.py` | Contact, location, certifications |
-| `scripts/run_all.py` | Runs every job and writes `out/quality-report.json` |
-
-## Run
-
-```bash
-export MONGO_URI="mongodb+srv://…"
-python scripts/run_all.py
-```
-
-Admin UI should POST `/api/v1/ai/quality-run` on Node (or call these scripts from Cloud Run Job) per company.
+- Product site: [journeyfoods.io](https://www.journeyfoods.io)
+- App: [app.journeyfoods.io](https://app.journeyfoods.io)
+- Data science and catalog quality jobs: [journeyfoodsAI](https://github.com/JourneyFoodsDev/journeyfoodsAI)
